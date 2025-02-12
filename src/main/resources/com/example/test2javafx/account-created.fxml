@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="398.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2javafx.AccountCreatedController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="602.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../createdAccount.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lable_welcome" layoutX="41.0" layoutY="48.0" prefHeight="84.0" prefWidth="531.0" text="Done! Your account is ready. Welcome to the beauty zone!">
+         <font>
+            <Font name="Footlight MT Light" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_to_login" layoutX="105.0" layoutY="139.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="402.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Time to log in to your fresh account!" underline="true">
+         <font>
+            <Font name="Footlight MT Light" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

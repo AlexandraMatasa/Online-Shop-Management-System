@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2javafx.AdminController">
+    <children>
+        <TabPane prefHeight="430.0" prefWidth="770.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tab_products" text="Products">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <BorderPane fx:id="mainPane" layoutX="-3.0" layoutY="-3.0" prefHeight="402.0" prefWidth="730.0">
+                                    <left>
+                                        <VBox prefHeight="376.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <AnchorPane prefHeight="406.0" prefWidth="166.0">
+                                                    <children>
+                                                        <Button fx:id="button_bodyCare" layoutX="18.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButtonBodyCareOnAction" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Body care">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button fx:id="button_nailCare" layoutX="18.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleButtonNailCareOnAction" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Nail care">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button fx:id="button_makeUp" layoutX="18.0" layoutY="129.0" mnemonicParsing="false" onAction="#handleButtonMakeUpOnAction" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Make up">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button fx:id="button_womenPerfume" layoutX="18.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleButtonWomenPerfumeryOnAction" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Women's perfumes">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button fx:id="button_menPerfume" layoutX="18.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleButtonMenPerfumeryOnAction" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Men's perfumes">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button fx:id="button_hairCare" layoutX="18.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleButtonHairCareOnAction" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Hair care">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </VBox>
+                                    </left>
+                                </BorderPane>
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_users" text="Users">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="730.0">
+                     <children>
+                        <ListView fx:id="usersListView" prefHeight="350.0" prefWidth="770.0" />
+                        <Button fx:id="button_add_user" layoutX="102.0" layoutY="363.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="200.0" style="-fx-cursor: hand;" text="Add new user" />
+                        <Button fx:id="button_remove_user" layoutX="414.0" layoutY="363.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="200.0" style="-fx-cursor: hand;" text="Remove user" />
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_details" text="Account details">
+                    <content>
+                        <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+                            <children>
+                                <Label fx:id="fnLabel" layoutX="80.0" layoutY="77.0" text="First Name:">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="getUsernameLabel" layoutX="200.0" layoutY="32.0" text="text">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="lnLabel" layoutX="80.0" layoutY="119.0" text="Last Name:">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="getFirstNameLabel" layoutX="200.0" layoutY="77.0" text="text">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="usernameLabel" layoutX="80.0" layoutY="32.0" text="Username:">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="getlastNameLabel" layoutX="200.0" layoutY="120.0" text="text">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="addressLabel" layoutX="80.0" layoutY="208.0" text="Address:">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="getEmailLabel" layoutX="200.0" layoutY="162.0" text="text">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="pNumberLabel" layoutX="80.0" layoutY="255.0" text="Phone Number:">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="getAddressLabel" layoutX="200.0" layoutY="210.0" text="text">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="emailLabel" layoutX="80.0" layoutY="162.0" text="Email:">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label fx:id="getPNumberLabel" layoutX="200.0" layoutY="255.0" text="text">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Label>
+                                <Label layoutX="450.0" layoutY="34.0" text="Do you want to change your password?">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="buttonChangePassword" layoutX="540.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleChangePassword" text="Change password" />
+                                <Button fx:id="button_logout" layoutX="83.0" layoutY="334.0" mnemonicParsing="false" text="Log out">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                        <Label layoutX="450.0" layoutY="164.0" text="Do you want to delete your account?">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttonDeleteAccount" layoutX="540.0" layoutY="210.0" mnemonicParsing="false" text="Delete account" />
+                        <ImageView fx:id="editUsernameIcon" fitHeight="25.0" fitWidth="34.0" layoutX="26.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="editFirstNameIcon" fitHeight="25.0" fitWidth="34.0" layoutX="26.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="editLastNameIcon" fitHeight="25.0" fitWidth="34.0" layoutX="26.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="editEmailIcon" fitHeight="25.0" fitWidth="34.0" layoutX="26.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="editAddressIcon" fitHeight="25.0" fitWidth="34.0" layoutX="26.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="editPhoneNumberIcon" fitHeight="25.0" fitWidth="34.0" layoutX="26.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="450.0" layoutY="293.0" text="Do you want to switch to your client account?">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttonSwitchToClientAccount" layoutX="520.0" layoutY="337.0" mnemonicParsing="false" text="Switch to client account" />
+
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+
+    </children>
+</StackPane>
